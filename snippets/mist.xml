@@ -24,9 +24,6 @@
   <project path="bionic" name="bionic" remote="mist" />
   <project path="manifest" name="manifest" remote="mist" />
 
-  <!-- Bootable -->
-  <project path="bootable/recovery" name="bootable_recovery" remote="mist" />
-
   <!-- Build -->
   <project path="build/make" name="build" remote="mist" >
     <copyfile src="core/root.mk" dest="Makefile" />
@@ -46,8 +43,8 @@
   <project path="device/mist/sepolicy" name="device_mist_sepolicy" remote="mist" />
   <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" remote="mist" />
   <project path="device/qcom/sepolicy_vndr" name="device_qcom_sepolicy_vndr" remote="mist" />
-  <project path="device/qcom/sepolicy-legacy" name="android_device_qcom_sepolicy" groups="qcom,pdk-qcom" revision="legacy" remote="extra" />
-  <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy" groups="qcom,pdk-qcom" revision="legacy-um" remote="extra" />
+  <project path="device/qcom/sepolicy-legacy" name="Mist-OS/device_qcom_sepolicy" groups="qcom,pdk-qcom" revision="legacy" remote="github" />
+  <project path="device/qcom/sepolicy-legacy-um" name="Mist-OS/device_qcom_sepolicy" groups="qcom,pdk-qcom" revision="legacy-um" remote="github" />
   <project path="device/qcom/sepolicy_vndr-legacy-um" name="device_qcom_sepolicy_vndr-legacy-um" remote="mist" />
 
   <!-- External -->
@@ -87,7 +84,6 @@
   
   <!-- Vendor -->
   <project path="vendor/mist" name="vendor_mist" remote="mist" />
-  <project path="vendor/themes" name="vendor_themes" remote="mist" />
   <project path="vendor/pixel-framework" name="vendor_pixel-framework" remote="mist" />
 
   <!-- Vendor (Qcom) repos -->
